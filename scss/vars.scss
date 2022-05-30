@@ -1,0 +1,27 @@
+$font-1: 'Georgia', serif;
+$font-2: 'Arial', sans-serif;
+$color-1: #F1CDB3;
+$color-2: #FFFFFF;
+$color-3: #FAFAFA;
+$color-4: #CDCDCD;
+$color-5: #292929;
+$color-6: #545454;
+$color-7: #4C4C4C;
+$color-8: #B2B2B2;
+$color-9: #F6F6F6;
+$color-10: #FDDCc4;
+$letter-space-1: 0.06em;
+
+$break-md: 991px;
+$break-sm: 768px;
+
+@mixin md-block() {
+    @media screen and (max-width: $break-md) {
+        @content;
+    }
+}
+@mixin sm-block() {
+    @media screen and (max-width: $break-sm) {
+        @content;
+    }
+}
