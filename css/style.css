@@ -368,6 +368,7 @@ section {
 @media screen and (max-width: 768px) {
   .friends-arrow {
     position: absolute;
+    bottom: -72px;
   }
 }
 .friends-arrow:hover {
@@ -375,14 +376,12 @@ section {
 }
 @media screen and (max-width: 768px) {
   .friends-arrow_left {
-    left: 0;
-    bottom: 0;
+    left: 95px;
   }
 }
 @media screen and (max-width: 768px) {
   .friends-arrow_right {
-    right: 0;
-    bottom: 0;
+    right: 110px;
   }
 }
 .friends-slider {
