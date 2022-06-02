@@ -92,6 +92,9 @@ section {
 .section-title {
     max-width: 400px;
     margin: 0 auto 60px;
+    // @include md-block() {
+    //     margin: 0 auto 80px;
+    // }
     
     text-align: center;
     @include sm-block() {
