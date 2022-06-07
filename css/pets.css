@@ -977,8 +977,6 @@ section {
 }
 .friends-slider {
   gap: 40px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -989,6 +987,35 @@ section {
   -webkit-column-gap: 30px;
      -moz-column-gap: 30px;
           column-gap: 30px;
+}
+.friends-pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 20px;
+}
+.friends-pagination_btn {
+  border: 2px solid #F1CDB3;
+  border-radius: 50%;
+  width: 52px;
+  height: 52px;
+  background: transparent;
+}
+.friends-pagination_btn:hover {
+  background-color: #F1CDB3;
+}
+.friends-pagination_btn-disabled {
+  border: 2px solid #CDCDCD;
+}
+.friends-pagination_btn-disabled:hover {
+  background-color: transparent;
+}
+.friends-pagination_btn-number {
+  background-color: #F1CDB3;
+  font-size: 20px;
 }
 
 .footer {
