@@ -89,8 +89,9 @@
         height: 1165px;
     }
 
-    @include sm-block() {
+    @include sm-block() {        
         height: 823px;
+       
     }
 
 
@@ -100,8 +101,7 @@
             height: 593px;
             position: absolute;
             right: 30px;
-            top: 572px;
-            
+            top: 572px;         
             
         }
         @include sm-block() {
@@ -120,12 +120,12 @@
             flex-wrap: wrap;
             justify-content: flex-end;
             gap: 100px;
-            padding-right: 154px;          
+            padding-right: 150px;          
             
         }
 
         @include sm-block() {
-            padding-top: 150px;
+            padding-top: 140px;
             gap: 105px;
             flex-wrap: wrap;
             justify-content: flex-end;
@@ -142,8 +142,8 @@
         }
 
         @include sm-block() {
-            padding-top: 0;
-            margin: 0 auto;
+            padding-top: 0;           
+           
         }
 
         &_title {

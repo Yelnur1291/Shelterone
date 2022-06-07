@@ -222,12 +222,12 @@ section {
         -ms-flex-pack: end;
             justify-content: flex-end;
     gap: 100px;
-    padding-right: 154px;
+    padding-right: 150px;
   }
 }
 @media screen and (max-width: 768px) {
   .hero-wrapper {
-    padding-top: 150px;
+    padding-top: 140px;
     gap: 105px;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -247,7 +247,6 @@ section {
 @media screen and (max-width: 768px) {
   .hero-info {
     padding-top: 0;
-    margin: 0 auto;
   }
 }
 .hero-info_title {
@@ -952,10 +951,20 @@ section {
 .header {
   background-color: #FFFFFF;
   height: 120px;
-  position: fixed;
 }
 .header-wrapper {
   padding: 30px 0;
+}
+@media screen and (max-width: 991px) {
+  .header-wrapper {
+    padding: 30px 30px 0px 30px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .header-wrapper {
+    padding-top: 30px;
+    padding-bottom: 0;
+  }
 }
 .header-logo_title {
   color: #545454;
@@ -964,11 +973,24 @@ section {
   color: #292929;
 }
 
+@media screen and (max-width: 991px) {
+  .nav-menu {
+    gap: 15px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .nav-menu {
+    display: none;
+  }
+}
 .nav-menu_item-link {
   color: #545454;
 }
 .nav-menu_item-link.active {
   color: #292929;
+}
+.nav-menu_item-link:hover {
+  color: #B2B2B2;
 }
 
 .friends {
@@ -986,6 +1008,43 @@ section {
   -webkit-column-gap: 30px;
      -moz-column-gap: 30px;
           column-gap: 30px;
+}
+@media screen and (max-width: 991px) {
+  .friends-slider {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 768px) {
+  .friends-slider {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 991px) {
+  .friends-slider_item:nth-child(7) {
+    display: none;
+  }
+  .friends-slider_item:nth-child(8) {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .friends-slider_item:nth-child(4) {
+    display: none;
+  }
+  .friends-slider_item:nth-child(5) {
+    display: none;
+  }
+  .friends-slider_item:nth-child(6) {
+    display: none;
+  }
+  .friends-slider_item:nth-child(7) {
+    display: none;
+  }
+  .friends-slider_item:nth-child(8) {
+    display: none;
+  }
 }
 .friends-pagination {
   display: -webkit-box;

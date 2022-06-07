@@ -3,63 +3,136 @@
 .header {
     background-color: $color-2;
     height: 120px;
-    position: fixed;
+
+
     &-wrapper {
         padding: 30px 0;
+
+        @include md-block() {
+            padding: 30px 30px 0px 30px;
+
+        }
+
+        @include sm-block() {
+            padding-top: 30px;
+            padding-bottom: 0;
+        }
     }
+
     &-logo {
-       
+
         &_title {
             color: $color-6;
         }
+
         &_text {
-                color: $color-5;
-        }
-    }
-
-   
-}
-
-.nav-menu {
-    &_item-link {
-        color: $color-6;
-        &.active {
             color: $color-5;
         }
     }
-    
+
+
+}
+
+.nav-menu {
+    @include md-block() {
+        gap: 15px;
+    }
+
+    @include sm-block() {
+        display: none;
+    }
+
+    &_item-link {
+        color: $color-6;
+
+        &.active {
+            color: $color-5;
+        }
+
+        &:hover {
+            color: $color-8;
+        }
+    }
+
 }
 
 .friends {
     padding: 200px 0 100px;
-    
+
     &-slider {
-        gap: 40px;        
+        gap: 40px;
         align-items: center;
         justify-content: center;
         row-gap: 40px;
-        column-gap: 30px;            
+        column-gap: 30px;
+
+        @include md-block() {
+            flex-wrap: wrap;
+        }
+
+        @include sm-block() {
+            flex-wrap: wrap;
+        }
+
+        &_item {
+            @include md-block() {
+                &:nth-child(7) {
+                    display: none;
+                }
+
+                &:nth-child(8) {
+                    display: none;
+                }
+            }
+
+            @include sm-block() {
+                &:nth-child(4) {
+                    display: none;
+                }
+
+                &:nth-child(5) {
+                    display: none;
+                }
+
+                &:nth-child(6) {
+                    display: none;
+                }
+
+                &:nth-child(7) {
+                    display: none;
+                }
+
+                &:nth-child(8) {
+                    display: none;
+                }
+            }
+        }
     }
+
     &-pagination {
         display: flex;
         justify-content: center;
         gap: 20px;
+
         &_btn {
             border: 2px solid $color-1;
             border-radius: 50%;
             width: 52px;
             height: 52px;
             background: transparent;
-            
+
             &:hover {
                 background-color: $color-1;
             }
+
             &-disabled {
                 border: 2px solid $color-4;
+
                 &:hover {
                     background-color: transparent;
                 }
             }
+
             &-number {
                 background-color: $color-1;
                 font-size: 20px;
@@ -74,8 +147,8 @@
     background-repeat: no-repeat;
     background-size: cover;
     height: fit-content;
-    
-    
+
+
 
     @include md-block() {
         height: fit-content;
@@ -93,8 +166,8 @@
         gap: 150px;
 
         flex-wrap: wrap;
-        
-        
+
+
 
         @include md-block() {
             row-gap: 60px;
@@ -114,7 +187,7 @@
             display: flex;
             flex-direction: column;
             gap: 40px;
-            
+
 
             @include sm-block() {
                 margin-bottom: 40px;
@@ -181,4 +254,3 @@
         }
     }
 }
-

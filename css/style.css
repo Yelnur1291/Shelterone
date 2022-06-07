@@ -75,6 +75,11 @@ button {
   margin: 0 auto;
   
 }
+@media screen and (max-width: 991px) {
+  .container {
+    padding: 0 0px;
+  }
+}
 @media screen and (max-width: 768px) {
   .container {
   padding: 0 10px;
