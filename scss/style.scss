@@ -278,10 +278,10 @@
     &-wrapper {
         display: flex;
         align-items: center;
-        justify-content: center;
-        gap: 53px;
+        justify-content: center;        
         flex-wrap: wrap;
-
+        
+        
         // background-color: $color-1;
         @include md-block() {
             
@@ -319,7 +319,8 @@
             }
         }
 
-        &_right {       
+        &_right { 
+               
             
             @include sm-block() {
                 right: 95px;                
